@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C.O.S.M.O. Inquiry Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <img src="assets/cosmo-logo.jpeg" alt="C.O.S.M.O. logo" />
+    <h1>Admin</h1>
+    <nav><a class="active" href="dashboard.html">Inquiries</a><a href="index.html">View Website</a></nav>
+  </aside>
+  <main class="dashboard">
+    <div class="dash-head">
+      <div><span>C.O.S.M.O.</span><h2>Inquiry Dashboard</h2><p>Manage organization inquiries and follow-up.</p></div>
+      <button id="clearDemo" class="small-btn">Clear Demo Data</button>
+    </div>
+    <div class="stats" id="stats"></div>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search name, organization or message…" />
+      <select id="statusFilter"><option value="">All statuses</option><option>New</option><option>Contacted</option><option>Follow-Up</option><option>Booked</option><option>Closed</option></select>
+    </div>
+    <div id="inquiries" class="inquiries"></div>
+  </main>
+  <script src="dashboard.js"></script>
+</body>
+</html>
