@@ -19,7 +19,7 @@ const form = document.getElementById('inquiryForm');
 const status = document.getElementById('formStatus');
 
 form?.addEventListener('submit', (event) => {
-  event.preventDefault();
+  
   const data = Object.fromEntries(new FormData(form).entries());
   const inquiry = {
     id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now()),
