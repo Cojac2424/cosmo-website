@@ -117,3 +117,42 @@ textarea { resize:vertical; }
   .site-footer { grid-template-columns:1fr; }
   .footer-links { margin-top:8px; }
 }
+@media (max-width: 600px) {
+  .brand img {
+    width: 280px;
+    max-width: 78vw;
+    height: auto;
+  }
+
+  .site-header {
+    height: 110px;
+    padding: 14px 18px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 13vw, 4.3rem);
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    max-width: 100%;
+    overflow-wrap: normal;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 0 22px;
+  }
+
+  .hero p {
+    font-size: 1.15rem;
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+}
